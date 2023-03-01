@@ -23,3 +23,28 @@ print(spam[0])
 print(spam[:4])
 print(spam[-3:])
 
+spamU = spam.upper()
+print(spamU)
+
+spamL = spam.lower()
+print(spamL)
+print('abc12123'.islower())
+
+# Omit:
+# isalpha() [only alpabets], isalnum() [only alpabets and nums],
+# isdecimal(), isspace(), istitle() [truely capital]
+# startswith(), endswith()
+
+print(','.join(['cats','dogs','rats']))
+
+spam ='''Dear Alice,
+Eve's Cat has been arrested for catnapping, cat burglary, and extortion.
+Sincerely,
+Bob'''
+print(spam.split('\n'))
+
+print('hello'.rjust(20))
+print('hello'.ljust(20,'-'))
+print('hello'.rjust(20,'^'))
+print('hello'.center(20,'='))
+
