@@ -1,7 +1,10 @@
+import numpy as np
+import pyperclip
+
 alice = "That is Alice's cat."
 bob = "Say hi to Bob\'s mother."
 print("Hello there!\nHow are you?\nI\'m doing fine.")
-print(r"Hello there!\nHow are you?\nI\'m doing fine.") # 原始字符串：前面加r
+print(r"Hello there!\nHow are you?\nI\'m doing fine.")  # 原始字符串：前面加r
 
 # multiple line string
 print('''Dear Alice,
@@ -23,6 +26,8 @@ print(spam[0])
 print(spam[:4])
 print(spam[-3:])
 
+print(pyperclip.paste())
+# pyperclip 从计算机剪贴板收集文本，或copy一个新的文本
 spamU = spam.upper()
 print(spamU)
 
