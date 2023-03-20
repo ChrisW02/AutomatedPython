@@ -52,4 +52,3 @@ print('hello'.rjust(20))
 print('hello'.ljust(20,'-'))
 print('hello'.rjust(20,'^'))
 print('hello'.center(20,'='))
-
