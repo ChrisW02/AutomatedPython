@@ -45,3 +45,21 @@ mo1 = batRegex.search('The Adventures of Batman')
 print(mo1.group())
 mo2 = batRegex.search('The Adventures of Batwoman')
 print(mo2.group())
+
+# (\d\d\d-)? 表示加不加区号都能匹配
+phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d-\d\d\d\d')
+mo = phoneRegex.search('My number is 413-113-2999')
+print(mo.group())
+mo2 = phoneRegex.search('My number is 113-2999')
+print(mo2.group())
+# 如果要匹配真正的问号，需要转义\?
+
+# 用星号匹配零次或多次
+batRegex = re.compile(r'Bat(wo)*man')
+mo1=batRegex.search('The Adventures of Batman')
+print(mo1.group())
+mo2=batRegex.search('The Adventures of Batwoman')
+print(mo2.group())
+mo3=batRegex.search('The Adventures of Batwowowowoman')
+print(mo3.group())
+# 如果要匹配真正的星号，需要转义\*
